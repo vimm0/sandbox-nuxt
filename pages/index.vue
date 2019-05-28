@@ -2,6 +2,9 @@
   <section class="container">
     <div>
       <logo/>
+      <img src="vue.png" alt="from-static-folder">
+      <img :src="require('assets/vue.png')" alt="from-assets-folder"/>
+
       <h1 class="title">
         Hello world
       </h1>
