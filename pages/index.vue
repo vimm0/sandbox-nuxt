@@ -1,10 +1,11 @@
 <template>
   <section class="container">
     <div>
-      <logo />
+      <logo/>
       <h1 class="title">
         Hello world
       </h1>
+      <nuxt-link to="/extra">Extra</nuxt-link>
       <h2 class="subtitle">
         My peachy Nuxt.js project
       </h2>
@@ -25,13 +26,13 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+  import Logo from '~/components/Logo.vue'
 
-export default {
-  components: {
-    Logo
+  export default {
+    components: {
+      Logo
+    }
   }
-}
 </script>
 
 <style>

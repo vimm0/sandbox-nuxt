@@ -9,39 +9,43 @@ export default {
   head: {
     title: pkg.name,
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {hid: 'description', name: 'description', content: pkg.description}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+    ],
+    script: [
+      {src: 'aos.js'}, // import js in head rather than body no other way around for global import
     ]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: {color: '#fff'},
 
   /*
   ** Global CSS
   */
   css: [
-    '~/assets/index.css',
-    '~/assets/default.css',
+    // global css import
+    '~/assets/css/index.css',
+    '~/assets/css/default.css',
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    // '~/plugins/lib',
   ],
 
   /*
   ** Nuxt.js modules
   */
-  modules: [
-  ],
+  modules: [],
 
   /*
   ** Build configuration
