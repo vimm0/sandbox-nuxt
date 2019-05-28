@@ -2,6 +2,12 @@
 
 > My peachy Nuxt.js project
 
+nuxt
+====
+- internationalization
+- global and partial css and js import
+- image import
+
 ## Build Setup
 
 ``` bash
