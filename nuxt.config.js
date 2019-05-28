@@ -17,7 +17,7 @@ export default {
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ],
     script: [
-      {src: 'aos.js'}, // import js in head rather than body no other way around for global import
+      // {src: 'aos.js'}, // import js in head rather than body no other way around for global import
     ]
   },
 
@@ -25,7 +25,9 @@ export default {
   ** Customize the progress-bar color
   */
   loading: {color: '#fff'},
-
+  router: {
+    middleware: 'i18n'
+  },
   /*
   ** Global CSS
   */
@@ -40,6 +42,7 @@ export default {
   */
   plugins: [
     // '~/plugins/lib',
+    '~/plugins/i18n.js'
   ],
 
   /*
